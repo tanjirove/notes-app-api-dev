@@ -1,0 +1,10 @@
+{
+  "pathParameters": {
+    "id": "643cc8e0-fe52-11ea-8cdf-e73e725770c3"
+  },
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "tanjir@faqi.com.au"
+    }
+  }
+}
