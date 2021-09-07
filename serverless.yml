@@ -31,7 +31,7 @@ provider:
   # 'iamRoleStatements' defines the permi ssion policy for the Lambda function.
   # In this case Lambda functions are granted with permissions to access DynamoDB.
   iamRoleStatements:
-    - Effect: Allow
+    - Effect: Deny
       Action:
         - dynamodb:DescribeTable
         - dynamodb:Query
