@@ -5,8 +5,8 @@ Resources:
     #UpdateReplacePolicy: Retain
     Properties:
       TableName: ${self:custom.tableName}
-      #PointInTimeRecoverySpecification:
-      #PointInTimeRecoveryEnabled: true
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
       AttributeDefinitions:
         - AttributeName: userId
           AttributeType: S
