@@ -4,6 +4,8 @@ Resources:
     DeletionPolicy: Retain
     Properties:
       TableName: ${self:custom.tableName}
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
       AttributeDefinitions:
         - AttributeName: userId
           AttributeType: S
@@ -14,6 +16,5 @@ Resources:
           KeyType: HASH
         - AttributeName: noteId
           KeyType: RANGE
-      PointInTimeRecoverySpecification: PointInTimeRecoverySpecification
       # Set the capacity to auto-scale
       BillingMode: PAY_PER_REQUEST
